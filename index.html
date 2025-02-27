@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tusas Contabilidade</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Função para rolar suavemente até um elemento
+        function scrollToSection(sectionId) {
+          document
+            .getElementById(sectionId)
+            .scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Configurar eventos de clique nos links do menu
+        document
+          .getElementById("inicio")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            scrollToSection("target-section0");
+          });
+
+        document
+          .getElementById("servicos")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            scrollToSection("target-section");
+          });
+
+        document
+          .getElementById("sobre")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            scrollToSection("target-section2");
+          });
+
+        document
+          .getElementById("contato")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            scrollToSection("target-section3");
+          });
+
+        // Eventos para as setas
+        document
+          .getElementById("scroll-arrow")
+          .addEventListener("click", function () {
+            scrollToSection("target-section");
+          });
+
+        document
+          .getElementById("scroll-arrow-white")
+          .addEventListener("click", function () {
+            scrollToSection("target-section2");
+          });
+
+        document
+          .getElementById("scroll-arrow-white2")
+          .addEventListener("click", function () {
+            scrollToSection("target-section3");
+          });
+      });
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <img src="images/logo.png" alt="TUSAS Logo" />
+        </div>
+        <nav class="header-nav">
+          <a id="inicio" href="#">Início</a>
+          <a id="servicos" href="#">Serviços</a>
+          <a id="sobre" href="#">Sobre</a>
+          <a id="contato" href="#">Contato</a>
+          <form action="">
+            <input type="search" placeholder="Buscar..." />
+          </form>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <div class="header-contact">
+          <i class="fa-solid fa-phone"></i>
+          <span>(11) 99999-9999</span>
+        </div>
+        <div class="user-menu">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="target-section0" class="content-hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Simplificamos a<br />contabilidade<br />para você.</h1>
+            <div class="hero-text-p-container">
+              <p>
+                Menos burocracia, mais eficiência. Cuidamos da sua contabilidade
+                para que você foque no que realmente importa.
+              </p>
+            </div>
+            <button class="cta-button">Conheça</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/image1.png" alt="Contabilidade Ilustrativa" />
+        </div>
+      </section>
+
+      <div id="scroll-arrow" class="scroll-arrow">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+      <section id="target-section" class="services-section">
+        <div class="services-section-container">
+          <h1>Como Podemos Ajudar Sua Empresa?</h1>
+          <p>
+            Nossa contabilidade vai além dos números. Com um serviço
+            personalizado e uma abordagem estratégica, garantimos que sua
+            empresa esteja sempre no caminho certo, com uma gestão financeira
+            eficiente, compliance tributário e o suporte necessário para o
+            crescimento sustentável.
+          </p>
+        </div>
+        <div class="services-section-grid">
+          <div class="grid-item">
+            <img class="grid-image" src="images/grid1.png" alt="foto grade1" />
+            <h1>Contabilidade</h1>
+            <p>
+              Organizamos suas finanças com precisão e transparência, garantindo
+              conformidade e facilitando a tomada de decisões.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <img class="grid-image" src="images/grid2.png" alt="foto grade2" />
+            <h1>Trabalhista</h1>
+            <p>
+              Gerenciamos folha de pagamento, admissões, rescisões e encargos,
+              assegurando o cumprimento das normas trabalhistas.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <img class="grid-image" src="images/grid3.png" alt="foto grade3" />
+            <h1>Tributário</h1>
+            <p>
+              Otimizamos sua carga tributária e garantimos que sua empresa
+              esteja sempre em dia com as obrigações fiscais.
+            </p>
+          </div>
+        </div>
+
+        <div id="scroll-arrow-white" class="scroll-arrow scroll-arrow-white">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <section id="target-section2" class="about-section">
+        <div class="about-container">
+          <div class="about-container-text">
+            <h1>Sobre a Tusas</h1>
+            <div class="about-container-text-p">
+              <p>
+                Na Tusas Contabilidade, transformamos números em soluções
+                estratégicas para o crescimento do seu negócio.<br /><br />Com
+                anos de experiência no mercado, oferecemos serviços contábeis
+                completos, garantindo segurança fiscal, otimização tributária e
+                gestão financeira eficiente.<br /><br />Nosso compromisso é
+                simplificar a contabilidade para que você possa focar no que
+                realmente importa: o sucesso da sua empresa.<br /><br />Contamos
+                com uma equipe qualificada e um atendimento personalizado para
+                atender às suas necessidades, sempre com transparência e
+                confiabilidade.
+              </p>
+            </div>
+          </div>
+          <button class="cta-button2">Saiba Mais</button>
+        </div>
+        <div class="about-image">
+          <img src="images/image4.jpg" alt="Contabilidade Ilustrativa" />
+        </div>
+
+        <div id="scroll-arrow-white2" class="scroll-arrow scroll-arrow-white">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+      <section id="target-section3" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-text">
+            <h1>Pronto para simplificar sua contabilidade?</h1>
+            <div class="contact-text-p-container">
+              <p>
+                Entre em contato e descubra como podemos ajudar a organizar suas
+                finanças, reduzir impostos e impulsionar seu negócio!
+              </p>
+            </div>
+            <button class="cta-button3">Entrar em contato</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; 2025 Tusas Contabilidade. Todos os direitos reservados. | Icons
+        provided by
+        <a href="https://www.flaticon.com/authors/yogi-aprelliyanto"
+          >Yogi Aprelliyanto</a
+        >
+        | Logo provided by <a href="https://www.freepik.com/">Freepik</a> |
+        Background images provided by <a href="https://pixabay.com/">Pixabay</a>
+      </p>
+    </footer>
+  </body>
+</html>
